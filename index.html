@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>  
+     *{
+            margin:0px;
+            padding: 0;
+        }
+        .header{
+            background-color:#000942;
+            height: 100vh;
+            width: 90%;
+            padding-left: 8%;
+            padding-right: 2%;
+            position: relative;
+            background-image: url(photo.png);
+            background-size: 31%;
+            background-repeat: no-repeat;
+            background-position: 100% 100%;
+            
+        }
+        .top-nav{
+    
+            display: flex;
+            align-items: center;
+            color: white;
+            justify-content:space-around;
+            padding: 30px 15px;
+            border-bottom: 3px solid #ef51b5;
+        }
+        .top-nav ul li{
+            list-style: none;
+            display: inline-block;
+            margin-top: 10px;
+            margin-right: 50px;
+            margin-bottom: 15px;
+        }
+        .top-nav ul li a {
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            transition
+        }
+       
+        
+        .top-nav button{
+            background-color: deeppink;
+            font-size: large;
+            border-radius: 30px 30PX;
+            padding: 5px;
+            cursor: pointer;
+        }
+        .side-nav{
+            background-color:salmon;
+            display: flex;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100px;
+            height: 100vh;
+          justify-content: space-around;
+            background: linear-gradient(#00bcd4, #e91e63, #ef51b5, #00bcd4);
+            background-size: 100% 500%;
+            background-position: 0 40%;
+            flex-direction: column;
+            padding: 50px 0;
+
+        }
+        .side-nav:hover{
+            animation: backcolor 20s linear reverse;
+        }
+        @keyframes backcolor{
+            0%{
+                background-position: 0 0%;
+            }
+            100%{
+                background-position: 0 400%;
+            }
+            
+        }
+        .side-nav .logo {
+            width: 75px;
+            cursor: pointer;
+        }
+        .side-nav a{
+            text-decoration: none;
+            width: max-content;
+            color: white;
+            transform: rotate(-90deg);
+            width:max-content;
+            font-size:larger;
+        }
+        .text-box{
+            margin-top: 10%;
+            margin-left: 100px;
+            font-size: 50px;
+            color: white;
+        }
+        .text-box h1{
+            font-weight: 500;
+            font-size: 20px;
+            max-width: 550px;
+            line-height: 95px;
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+        .text-box .icon  {
+           background-color: #e91e63;
+           border-radius: 50%;
+           width: 70px;
+           height: 70px;
+           justify-content: center;
+           display: flex;
+           align-items: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="top-nav">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">OUR WORK</a></li>
+                <li><a href="#">WHAT WE DO</a></li>
+                <li><a href="#">ABOUT US</a></li>
+            </ul>
+            <button>CONTACT US</button>
+        </div>
+        <div class="side-nav">
+            <img src="logo.png" class="logo">
+            <a href="#">LETTEST PROJECT</a>
+        </div>
+        <div class="text-box">
+            <p>WE HELP TO</p>
+            <h1>DISIGN YOUR JOURNEY</h1>
+            <div class="icon">
+                <img src="arrow.png">
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
